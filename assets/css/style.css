@@ -30,13 +30,17 @@ h1 {
     border-radius: 8%;
 }
 
+.rules-head {
+    text-align: center;
+}
+
 table {
-    width: 40%;
-    height: 60vh;
+    width: 33%;
+    height: 50vh;
     border: 2px solid whitesmoke;
     margin: 0 auto;
     position: relative;
-    top: -310px;
+    top: -290px;
 }
 
 td {
@@ -70,15 +74,16 @@ td {
 }
 
 button {
-    margin-left: 45%;
+    float: right;
     position: relative;
-    bottom: 260px;
-    background: rgb(55, 117, 50);
-    border: 2px solid whitesmoke;
-    border-radius: 10%;
-    padding: 10px;
+    right: -200px;
+    bottom: 450px;
+    padding: 55px 50px 55px 50px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background: green;
 }
 
 #new-game {
-    font-size: 140%;
+    font-size: 180%;
 }
