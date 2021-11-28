@@ -115,6 +115,8 @@ body {
     margin-left: 0.45em;
 }
 
+/* Media Queries for mobile 320px */
+
 @media (max-width: 320px) {
 
     .game-overview {
@@ -128,89 +130,3 @@ body {
     }
     
 }
-
-
-
-
-
-/*
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    word-spacing: 1rem;
-    margin: 0;
-    background: black;
-    padding: 40px;
-    border: 1px solid #3a3a3a;
-}
-
-#about-game {
-    width: 25%;
-    margin-left: 1%;
-    position: relative;
-    top: 80px;
-    background: rgba(118, 163, 145, 0.5);
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 8%;
-}
-
-.rules-head {
-    text-align: center;
-}
-
-table {
-    width: 33%;
-    height: 50vh;
-    border: 2px solid whitesmoke;
-    margin: 0 auto;
-    position: relative;
-    top: -290px;
-}
-
-td {
-    background: white;
-    text-align: center;
-    font-size: 5rem;
-    color: black;
-}
-
-.score-area {
-    float: right;
-    position: relative;
-    bottom: 600px;
-    margin-right: 15%;
-}
-
-.scores {
-    font-size: 120%;
-}
-
-#won, #lost {
-    padding-left: 10px;
-}
-
-#won {
-    color: green;
-}
-
-#lost {
-    color: red;
-}
-
-button {
-    float: right;
-    position: relative;
-    right: -200px;
-    bottom: 450px;
-    padding: 55px 50px 55px 50px;
-    border: 1px solid white;
-    border-radius: 100%;
-    background: green;
-}
-
-#new-game {
-    font-size: 180%;
-}
-*/
