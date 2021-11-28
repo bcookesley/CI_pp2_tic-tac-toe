@@ -39,15 +39,15 @@ window.addEventListener('DOMContentLoaded', () => {
             if (a === b && b === c) {
                 roundWon = true;
                 break;
-            }
+            } 
         }
 
     if (roundWon) {
-            score.innerText = 
+            incrementScore();
             announce(currentPlayer === 'X' ? playerX_Won : playerO_Won);
             isGameActive = false;
             return;
-         }
+         } 
 
     if (!board.includes(''))
         announce(tie);
@@ -111,6 +111,21 @@ window.addEventListener('DOMContentLoaded', () => {
             box.classList.remove('playerX');
             box.classList.remove('playerO');
         });
+    }
+
+    function incrementScore() {
+
+        let oldScore = parseInt(document.getElementById("score").innerText);
+        document.getElementById("score").innerText = ++oldScore;
+    
+    
+    }
+
+    function incrementLoss() {
+
+        let oldScore = parseInt(document.getElementById("loss").innerText);
+        document.getElementById("loss").innerText = ++oldScore;
+    
     }
 
 
