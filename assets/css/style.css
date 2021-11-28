@@ -105,6 +105,16 @@ body {
     font-size: 140%;
 }
 
+#score {
+    color: green;
+    margin-left: 0.5em;
+}
+
+#loss {
+    color: red;
+    margin-left: 0.7em;
+}
+
 
 
 

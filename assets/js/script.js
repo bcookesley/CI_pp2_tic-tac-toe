@@ -39,11 +39,12 @@ window.addEventListener('DOMContentLoaded', () => {
             if (a === b && b === c) {
                 roundWon = true;
                 break;
-            } 
+            } else {
+                let roundLoss = true;
+            }
         }
 
     if (roundWon) {
-            incrementScore();
             announce(currentPlayer === 'X' ? playerX_Won : playerO_Won);
             isGameActive = false;
             return;
@@ -58,9 +59,11 @@ window.addEventListener('DOMContentLoaded', () => {
         switch(type) {
             case playerO_Won:
                 announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
+                incrementLoss();
                 break;
             case playerX_Won:
                 announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
+                incrementScore();
                 break;
             case tie:
                 announcer.innerText = 'Tie';
