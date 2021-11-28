@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
     let currentPlayer = 'X';
     let isGameActive = true;
 
+    let score = document.getElementById('score');
+    let loss = document.getElementById('loss');
+
     const playerX_Won = 'playerX_Won';
     const playerO_Won = 'playerO_Won';
     const tie = 'tie';
@@ -40,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
     if (roundWon) {
+            score.innerText = 
             announce(currentPlayer === 'X' ? playerX_Won : playerO_Won);
             isGameActive = false;
             return;
@@ -108,6 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
             box.classList.remove('playerO');
         });
     }
+
 
     boxes.forEach( (box, index) => {
         box.addEventListener('click', () => userAction(box, index));
