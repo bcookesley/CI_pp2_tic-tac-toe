@@ -1,9 +1,15 @@
+// Waits for DOM content to load
+
 window.addEventListener('DOMContentLoaded', () => {
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
     const announcer = document.querySelector('.announcer');
 
+    /**
+     * All 9 squares of the board are an empty string to be filled with either X or O
+     * and winning combinations are listed.
+     */
     let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';
     let isGameActive = true;
@@ -15,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const playerO_Won = 'playerO_Won';
     const tie = 'tie';
 
+    //Winning combinations
+
     const winningConditions = [
         [0, 1, 2],
         [3, 4, 5],
@@ -25,6 +33,12 @@ window.addEventListener('DOMContentLoaded', () => {
         [0, 4, 8],
         [2, 4, 6]
     ];
+    
+    /**
+     * Win and loss conditions declearing the combination of 3
+     * matching win conditions.
+     * 
+     */
 
     function handleResultValidation() {
         let roundWon = false;
@@ -39,9 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (a === b && b === c) {
                 roundWon = true;
                 break;
-            } else {
-                let roundLoss = true;
-            }
+            } 
         }
 
         if (roundWon) {
