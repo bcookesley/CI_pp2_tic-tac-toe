@@ -44,19 +44,19 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-    if (roundWon) {
+        if (roundWon) {
             announce(currentPlayer === 'X' ? playerX_Won : playerO_Won);
             isGameActive = false;
             return;
-         } 
+        }
 
-    if (!board.includes(''))
-        announce(tie);
+        if (!board.includes(''))
+            announce(tie);
 
     }
 
     const announce = (type) => {
-        switch(type) {
+        switch (type) {
             case playerO_Won:
                 announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
                 incrementLoss();
@@ -120,19 +120,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
         let oldScore = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++oldScore;
-    
-    
+
+
     }
 
     function incrementLoss() {
 
         let oldScore = parseInt(document.getElementById("loss").innerText);
         document.getElementById("loss").innerText = ++oldScore;
-    
+
     }
 
 
-    boxes.forEach( (box, index) => {
+    boxes.forEach((box, index) => {
         box.addEventListener('click', () => userAction(box, index));
     });
 
