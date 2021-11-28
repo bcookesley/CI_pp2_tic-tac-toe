@@ -22,6 +22,7 @@ body {
     width: 30%;
     float: left;
     margin-left: 2em;
+    margin-top: -19.5em;
     background: rgba(31, 202, 16, 0.2);
     border: 1px solid white;
     border-radius: 8px;
@@ -54,8 +55,7 @@ body {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
-    position: relative;
-    right: -9%;
+    margin: 0 auto;
 }
 
 .box {
@@ -119,14 +119,28 @@ body {
 
 @media (max-width: 320px) {
 
+    .title {
+        font-size: 100%;
+    }
+
+    .container {
+        margin-left: -20px;
+    }
+
     .game-overview {
         width: 80%;
-        margin-top: 5em;
+        margin-top: 9em;
     }
 
     .controls {
         position: relative;
         right: 495px;
+    }
+
+    #scores {
+        position: relative;
+        top: -565px;
+        left: 50px;
     }
     
 }
