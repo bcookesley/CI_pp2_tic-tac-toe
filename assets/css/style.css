@@ -102,7 +102,7 @@ body {
     margin-right: 20%;
     position: relative;
     top: -240px;
-    font-size: 140%;
+    font-size: 160%;
 }
 
 #score {
@@ -112,7 +112,21 @@ body {
 
 #loss {
     color: red;
-    margin-left: 0.7em;
+    margin-left: 0.45em;
+}
+
+@media (max-width: 320px) {
+
+    .game-overview {
+        width: 80%;
+        margin-top: 5em;
+    }
+
+    .controls {
+        position: relative;
+        right: 495px;
+    }
+    
 }
 
 
