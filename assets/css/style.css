@@ -83,8 +83,15 @@ body {
     border-radius: 8px;
     border: none;
     font-size: 20px;
-    margin-left: 1em;
+    margin-left: 30rem;
     cursor: pointer;
+}
+
+#scores {
+    float: right;
+    margin-right: 20%;
+    position: relative;
+    top: -200px;
 }
 
 
