@@ -18,7 +18,7 @@ body {
     background: black;
     z-index: 3;
     position: relative;
-    margin: 0 auto;
+    margin: 0 0 0 18%;
     bottom: 300px;
 }
 
@@ -40,18 +40,30 @@ body {
 
 #single-player > h3 {
     text-align: center;
+    margin-top: 60px;
+    font-size: 160%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-decoration: underline;
 }
 
 #two-player > h3 {
     text-align: center;
+    margin-top: 60px;
+    font-size: 160%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-decoration: underline;
 }
 
 #single-player > p {
     text-align: center;
+    margin-top: 5px;
 }
 
 #two-player > p {
     text-align: center;
+    margin-top: 5px;
 }
 
 .title {
