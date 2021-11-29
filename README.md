@@ -19,7 +19,7 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 # Project Goals
 
 ### User Goals
-- Playing a quick, fun and easy game against the computer
+- Playing a quick, fun and easy game against the computer or a friend
 - Easily keep track of score, wins and losses
 - Clean easy to see and use website and game 
 
@@ -32,5 +32,17 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 # User Experience 
 
 ### Target Audience 
-- People looking for a quick game to play online 
-- 
+- Casual gamers 
+- People who like the classic game of tic-tac-toe
+- People looking for a quick and easy game to play
+
+
+
+
+
+# Credits 
+
+### JavaScript 
+
+- JavaScript Academy for the code and the walk through of how to make the game - https://www.youtube.com/channel/UCicOwFWkuMX0ddFaKCc_E5Q
+    - Link to video - https://www.youtube.com/watch?v=B3pmT7Cpi24
