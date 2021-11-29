@@ -9,6 +9,51 @@ body {
     margin: 0;
 }
 
+.game-choice {
+    display: flex;
+    width: 66%;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: black;
+    z-index: 3;
+    position: relative;
+    margin: 0 auto;
+    bottom: 300px;
+}
+
+#single-player {
+    width: 40%;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 20px 0 20px 35px;
+}
+
+#two-player {
+    width: 40%;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 20px 0 20px 150px;
+}
+
+#single-player > h3 {
+    text-align: center;
+}
+
+#two-player > h3 {
+    text-align: center;
+}
+
+#single-player > p {
+    text-align: center;
+}
+
+#two-player > p {
+    text-align: center;
+}
+
 .title {
     background: black;
     color: white;
