@@ -10,6 +10,7 @@ the Love Maths walkthrough project.
 // Waits for DOM content to load
 
 window.addEventListener('DOMContentLoaded', () => {
+
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const playerX_Won = 'playerX_Won';
     const playerO_Won = 'playerO_Won';
     const tie = 'tie';
+    var cells;
 
 
     // function to hold which game to select and start
@@ -44,6 +46,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
         }
 
+    }
+
+    function computerMove() {
+        let emptyCell = [''];
+        let random;
+
+        cells.forEach(function(cell) {
+            if (cell.textContent === '') {
+                emptyCells.push(cell);
+            }
+        });
+
+        random = Math.ceil(Math.random() * 
+        emptyCells.length) -1;
+        emptyCells[random].textContent = mark;
+        checkRow()
+        switchMark()
+    }
+
+    function switchMark() {
+        if (mark === 'X') {
+            mark = 'O';
+        } else {
+            mark = 'X';
+        }
     }
 
     //Winning combinations
