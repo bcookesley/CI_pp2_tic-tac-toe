@@ -11,60 +11,51 @@ body {
 
 .game-choice {
     display: flex;
-    width: 66%;
-    height: 300px;
-    border: 2px solid white;
-    border-radius: 8px;
-    background: black;
+    width: 50%;
     z-index: 3;
     position: relative;
-    margin: 0 0 0 18%;
-    bottom: 300px;
+    margin: auto;
+    top: -350px;
+    left: 200px;
+    background: black;
+    padding: 3em 4em 3em 1em;
+    border-radius: 10%;
+    border: 1px solid white;
 }
 
 #single-player {
-    width: 40%;
-    height: 250px;
-    border: 2px solid white;
-    border-radius: 8px;
-    margin: 20px 0 20px 35px;
+    margin-left: 8%;
+    width: 80%;
+    height: 150px;
+    font-size: 160%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: #3a3a3a;
+    color: white;
+
 }
 
 #two-player {
-    width: 40%;
-    height: 250px;
-    border: 2px solid white;
-    border-radius: 8px;
-    margin: 20px 0 20px 150px;
-}
-
-#single-player > h3 {
-    text-align: center;
-    margin-top: 60px;
+    margin-left: 8%;
+    width: 80%;
+    height: 150px;
     font-size: 160%;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    text-decoration: underline;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: #3a3a3a;
+    color: white;
 }
 
-#two-player > h3 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 160%;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    text-decoration: underline;
+#single-player:hover {
+    opacity: 0.8;
+    color: rgb(0, 255, 34);
 }
 
-#single-player > p {
-    text-align: center;
-    margin-top: 5px;
+#two-player:hover {
+    opacity: 0.8;
+    color: rgb(0, 255, 34);
 }
 
-#two-player > p {
-    text-align: center;
-    margin-top: 5px;
-}
 
 .title {
     background: black;
