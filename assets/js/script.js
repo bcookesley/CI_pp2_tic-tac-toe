@@ -38,14 +38,39 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // function to hold which game to select and start
 
-    function gameStart() {
-        let gameType = document.getElementsByClassName('game-choice');
+    function singlePlayer() {
 
-        if (gameType.style.display === 'none') {
-            gameType.style.display = "block";
+        if (onePlayer.style.display === 'none') {
+            onePlayer.style.display = 'block';
         } else {
-            gameType.style.display = 'none';
+            onePlayer.style.display = 'none';
+            twoPlayer.style.display = 'none';
         }
+
+    }
+
+
+    function multiPlayer() {
+
+        if (twoPlayer.style.display === 'none') {
+            twoPlayer.style.display = 'block';
+        } else {
+            twoPlayer.style.display = 'none';
+            onePlayer.style.display = 'none';
+        }
+    }
+
+
+
+    twoPlayer.addEventListener('click', multiPlayer);
+
+    onePlayer.addEventListener('click', singlePlayer);
+
+
+
+    function gameStart() {
+
+    
 
 
     }

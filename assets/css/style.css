@@ -17,10 +17,7 @@ body {
     margin: auto;
     top: -350px;
     left: 200px;
-    background: black;
-    padding: 3em 4em 3em 1em;
-    border-radius: 10%;
-    border: 1px solid white;
+
 }
 
 #single-player {
