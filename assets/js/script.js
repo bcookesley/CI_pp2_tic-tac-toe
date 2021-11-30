@@ -31,22 +31,22 @@ window.addEventListener('DOMContentLoaded', () => {
     const playerX_Won = 'playerX_Won';
     const playerO_Won = 'playerO_Won';
     const tie = 'tie';
-    var cells;
+    
 
 
 
 
     // function to hold which game to select and start
 
-    function gameStart(event) {
-        
-        
-        if (onePlayer) {
-            startGame.innerHTML.remove('.game-choice');
-        }
-        else if (twoPlayer) {
+    function gameStart() {
+        let gameType = document.getElementsByClassName('game-choice');
 
+        if (gameType.style.display === 'none') {
+            gameType.style.display = "block";
+        } else {
+            gameType.style.display = 'none';
         }
+
 
     }
 
