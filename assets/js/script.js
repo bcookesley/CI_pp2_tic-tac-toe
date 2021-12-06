@@ -75,6 +75,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    // Play against the computer option 
+
     function computerMove() {
         let emptyCell = [''];
         let random;
