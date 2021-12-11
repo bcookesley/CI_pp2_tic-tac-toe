@@ -9,7 +9,7 @@ the Love Maths walkthrough project.
 
 // Waits for DOM content to load
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     const boxes = Array.from(document.querySelectorAll('.box'));
     const playerDisplay = document.querySelector('.display-player');
