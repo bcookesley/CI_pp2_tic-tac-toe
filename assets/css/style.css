@@ -58,6 +58,30 @@ h2, h4 {
     flex-direction: row;
 }
 
+#buttons button {
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
+    background: #e02929;
+    border: none;
+    outline: none;
+    color: #191a20;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+    transition: 0.5s;
+}
+
+#buttons button:first-child {
+    margin-right: 40px;
+}
+
+#buttons button:hover, #button button:hover {
+    transform: scale(0.9);
+}
+
 
 
 
