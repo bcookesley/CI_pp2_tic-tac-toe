@@ -18,10 +18,44 @@ body {
 #container {
     height: auto;
     width: auto;
-    background: linear-gradient(to bottom, #2b2d47 10%, #181444);
+    background: linear-gradient(to bottom, #000000 10%, #2b0e0e);
     border-radius: 20px;
     padding: 30px;
     box-shadow: inset 1px 2px 0px rgb(255 255 255 / 18%), inset -2px -2px 2px rgb(0 0 0 / 65%);
+}
+
+h2, h4 {
+    color: white;
+}
+
+#startPage {
+    height: 220px;
+    width: 400px;
+}
+
+#startPage h2, #winner h2 {
+    font-size: 50px;
+    color: rgb(207, 204, 204);
+}
+
+#line {
+    height: 1px;
+    width: 100%;
+    background: rgb(207, 204, 204);
+    margin: 20px 0;
+}
+
+#startPage h4 {
+    font-size: 25px;
+    color: rgb(207, 204, 204);
+}
+
+#buttons {
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 
