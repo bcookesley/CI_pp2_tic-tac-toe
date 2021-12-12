@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
+
+
+
+
+
+/*
 body {
     background: #202020;
     font-family: Quicksand, sans-serif;
@@ -160,7 +166,11 @@ body {
     margin-left: 0.45em;
 }
 
+*/
+
 /* Media Queries for mobile 320px */
+
+/*
 
 @media (max-width: 320px) {
 
@@ -189,3 +199,4 @@ body {
     }
     
 }
+*/
