@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let box = document.querySelectorAll("#box");
     let playerDisplay = document.querySelector("#playerDisplay");
     let showChange = document.querySelector("#showChange");
+    let X = document.getElementsByTagName("i")
 
     // Winner page tags 
     let winner = document.querySelector("#winner");
@@ -56,17 +57,35 @@ document.addEventListener('DOMContentLoaded', () => {
         chooseNow.addEventListener('click', () => {
             if (chooseNow.id === "playerX") {
                 changeTurn = false;
-                showChange.style.display = `block`;
+                showChange.innerHTML = "Player X's Turn";
             } else {
                 changeTurn = true;
-                showChange.style.display = `none`;
             }
             startPage.style.display = "none";
             mainPage.style.display = "block";
         })
     });
 
-
+    box.forEach(items => {
+        items.addEventListener('click', () => {
+            if (changeTurn == false)  {
+                items.innerHTML = `<i class="fas fa-times"></i>`;
+                items.id = "X";
+                items.style.pointerEvents = "none";
+                showChange.innerHTML = "Player X's Turn";
+                changeTurn = true;
+            } else {
+                items.innerHTML = `<i class="fas fa-circle"></i>`;
+                items.id ="O";
+                items.style.pointerEvents = "none";
+                showChange.innerHTML = "Player O's Turn";
+                changeTurn = false;
+            }
+            winningFunc();
+            drawFunc();
+            computerMove()
+        })
+    })
 
 
 
@@ -95,6 +114,17 @@ document.addEventListener('DOMContentLoaded', () => {
         checkRow();
         switchMark();
     }
+
+    // switch player mark
+    function switchMark() {
+        if (mark == 'X') {
+        mark = 'O';
+        } else {
+        mark = 'X';
+        }
+    }
+
+    computerMove();
 
 
 
