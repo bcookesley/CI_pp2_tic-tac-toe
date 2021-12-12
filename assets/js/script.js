@@ -19,14 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let choose = document.querySelectorAll(".choose");
 
     // Main page tags 
-    let mainPage = document.querySelector("#mainPage");
+    let mainPage = document.querySelector("#main-page");
     let box = document.querySelectorAll("#box");
     let playerDisplay = document.querySelector("#playerDisplay");
+    let showChange = document.querySelector("#showChange");
 
     // Winner page tags 
     let winner = document.querySelector("#winner");
     let winningName = document.querySelector("winningName");
     let reset = document.querySelector("#reset");
+
+    let mark;
+    let changeTurn = null;
 
     /*
         Board indexes 
@@ -47,6 +51,20 @@ document.addEventListener('DOMContentLoaded', () => {
         [2, 4, 6]
     ]
 
-    
+    choose.forEach(chooseNow => {
+        chooseNow.addEventListener('click', () => {
+            if (chooseNow.id === "playerX") {
+                changeTurn = false;
+                showChange.style.display = `block`;
+            } else {
+                changeTurn = true;
+                showChange.style.display = `none`;
+            }
+            startPage.style.display = "none";
+            mainPage.style.display = "block";
+        })
+    });
+
+
 
 });

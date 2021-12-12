@@ -139,7 +139,7 @@ h2, h4 {
     width: 330px;
     position: absolute;
     top: 150px;
-    left: 30px;
+    left: 10px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-gap: 15px;
