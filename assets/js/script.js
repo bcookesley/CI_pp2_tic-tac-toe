@@ -11,10 +11,21 @@ the Love Maths walkthrough project.
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const boxes = Array.from(document.querySelectorAll('.box'));
-    const playerDisplay = document.querySelector('.display-player');
-    const resetButton = document.querySelector('#reset');
-    const announcer = document.querySelector('.announcer');
-    const startGame = document.querySelector('.game-choice');
+    // X => <i class="fas fa-times"></i>
+    // O => <i class="fas fa-circle-notch"></i>
+
+    // Starting page tags
+    let startPage = document.querySelector("#startPage");
+    let choose = document.querySelectorAll(".choose");
+
+    // Main page tags 
+    let mainPage = document.querySelector("#mainPage");
+    let box = document.querySelectorAll("#box");
+    let playerDisplay = document.querySelector("#playerDisplay");
+
+    // Winner page tags 
+    let winner = document.querySelector("#winner");
+    let winningName = document.querySelector("winningName");
+    let reset = document.querySelector("#reset");
 
 });
