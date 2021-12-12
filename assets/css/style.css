@@ -82,6 +82,51 @@ h2, h4 {
     transform: scale(0.9);
 }
 
+#winner {
+    display: none;
+}
+
+#winner #button button {
+    margin-top: 20px;
+}
+
+#main-page {
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    display: block;
+}
+
+#main-page #player-display {
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+
+#gameBoard {
+    height: 400px;
+    width: 330px;
+    position: absolute;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+}
+
 
 
 
