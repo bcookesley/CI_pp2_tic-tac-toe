@@ -66,29 +66,35 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     });
 
+
+
+
+
+
+
     // let the computer make the next move
-function computerMove() {
-    var emptyCells = [];
-    var random;
+    function computerMove() {
+        var emptyCells = [];
+        var random;
   
-  /*  for (var i = 0; i < cells.length; i++) {
-      if (cells[i].textContent == '') {
+        /*  for (var i = 0; i < cells.length; i++) {
+        if (cells[i].textContent == '') {
         emptyCells.push(cells[i]);
-      }
-    }*/
+        }
+        }*/
     
-    cells.forEach(function(cell){
-      if (cell.textContent == '') {
-        emptyCells.push(cell);
-      }
-    });
+        cells.forEach(function(cell){
+            if (cell.textContent == '') {
+            emptyCells.push(cell);
+            }
+        });
     
-    // computer marks a random EMPTY cell
-    random = Math.ceil(Math.random() * emptyCells.length) - 1;
-    emptyCells[random].textContent = mark;
-    checkRow();
-    switchMark();
-  }
+        // computer marks a random EMPTY cell
+        random = Math.ceil(Math.random() * emptyCells.length) - 1;
+        emptyCells[random].textContent = mark;
+        checkRow();
+        switchMark();
+    }
 
 
 
