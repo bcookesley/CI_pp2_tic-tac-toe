@@ -68,7 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function HumanPlayer() {
 
         this.takeTurn = function() {
-            console.log("human player turn");
+            
+            board.positions.forEach( el => el.addEventListener('click', handleTurnTaken));
+        }
+
+        function handleTurnTaken(event) {
+            
         }
     }
 
