@@ -131,6 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
         switchMark();
     }
 
+    function checkRow() {
+        
+    }
+
     // switch player mark
     function switchMark() {
         if (mark == 'X') {
@@ -139,8 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mark = 'X';
         }
     }
-
-    computerMove();
 
 
 
