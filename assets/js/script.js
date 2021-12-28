@@ -20,6 +20,50 @@ document.addEventListener('DOMContentLoaded', () => {
     let winningName = document.querySelector("winningName");
     let reset = document.querySelector("#reset");
 
+    const ticTacToeGame = new TicTacToeGame();
+    ticTacToeGame.start();
+
+    function TicTacToeGame() {
+        const board = new Board();
+        const humanPlayer = new HumanPlayer();
+        const computerPlayer = new ComputerPlayer();
+        let turn = 0;
+
+        this.start = function(){
+
+        }
+    }
+
+
+    button.onclick = function () {
+        if(startPage.style.display !== "none") {
+            startPage.style.display = "none";
+        } else {
+            startPage.style.display = "block";
+        }
+        mainPage.style.display = "block";
+        //playerMove();
+    }
+
+    function Board() {
+        this.positions = Array.from(box);
+        console.log(this.positions);
+    }
+
+    function HumanPlayer() {
+
+    }
+
+    function ComputerPlayer() {
+        
+    }
+
+
+
+
+
+
+
     /*
     let mark;
     var cells;
@@ -32,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         [3] [4] [5]
         [6] [7] [8]
     */ 
+
+        /*
 
     // Winning combinations 
     let winningCombination = [
@@ -69,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     });
     */
-
+/*
     box.forEach(items => {
         items.addEventListener('click', () => {
             items.innerHTML = `<i class="fas fa-times"></i>`;
@@ -117,6 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
         emptyCells.push(cells[i]);
         }
         }*/
+
+        /*
     
         cells.forEach(function(cell){
             if (cell.textContent == '') {
@@ -132,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkRow() {
-        
+
     }
 
     // switch player mark
@@ -143,6 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mark = 'X';
         }
     }
+    */
 
 
 
