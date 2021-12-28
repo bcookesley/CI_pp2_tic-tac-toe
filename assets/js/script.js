@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let reset = document.querySelector("#reset");
 
     const ticTacToeGame = new TicTacToeGame();
-    ticTacToeGame.start();
+    //ticTacToeGame.start();
 
     function TicTacToeGame() {
         const board = new Board();
@@ -30,7 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
         let turn = 0;
 
         this.start = function(){
+            const config = { childList: true};
+            const observer = new MutatuionObserver(() => takeTurn());
+            board.positions.forEach((el) => observer.observe(el, config));
+            takeTurn();
+            console.log("hello");
+        }
 
+        function takeTurn() {
+            
+            if (turn % 2 === 0) {
+                humanPlayer.takeTurn();
+            } else {
+                computerPlayer.takeTurn();
+            }
+
+            turn++;
         }
     }
 
@@ -42,19 +57,26 @@ document.addEventListener('DOMContentLoaded', () => {
             startPage.style.display = "block";
         }
         mainPage.style.display = "block";
-        //playerMove();
+        HumanPlayer();
+        Board();
     }
 
     function Board() {
         this.positions = Array.from(box);
-        console.log(this.positions);
     }
 
     function HumanPlayer() {
 
+        this.takeTurn = function() {
+            console.log("human player turn");
+        }
     }
 
     function ComputerPlayer() {
+
+        this.takeTurn = function() {
+            console.log("computer player turn");
+        }
         
     }
 
