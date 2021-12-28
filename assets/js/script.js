@@ -7,23 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Starting page tags
     let startPage = document.querySelector("#startPage");
-    let choose = document.querySelectorAll(".choose");
+    let button = document.getElementById("button");
+    let enterGame = document.querySelectorAll(".enterGame");
 
     // Main page tags 
     let mainPage = document.querySelector("#main-page");
     let box = document.querySelectorAll("#box");
-    let playerDisplay = document.querySelector("#playerDisplay");
     let showChange = document.querySelector("#showChange");
-    let X = document.getElementsByTagName("i")
 
     // Winner page tags 
     let winner = document.querySelector("#winner");
     let winningName = document.querySelector("winningName");
     let reset = document.querySelector("#reset");
 
+    /*
     let mark;
     var cells;
     let changeTurn = null;
+    */
 
     /*
         Board indexes 
@@ -44,6 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
         [2, 4, 6]
     ]
 
+    button.onclick = function () {
+        if(startPage.style.display !== "none") {
+            startPage.style.display = "none";
+        } else {
+            startPage.style.display = "block";
+        }
+        mainPage.style.display = "block";
+        playerMove();
+    }
+
+    /*
     choose.forEach(chooseNow => {
         chooseNow.addEventListener('click', () => {
             if (chooseNow.id === "playerX") {
@@ -56,22 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
             mainPage.style.display = "block";
         })
     });
+    */
 
     box.forEach(items => {
         items.addEventListener('click', () => {
-            if (changeTurn == false)  {
-                items.innerHTML = `<i class="fas fa-times"></i>`;
-                items.id = "X";
-                items.style.pointerEvents = "none";
-                showChange.innerHTML = "Player X's Turn";
-                changeTurn = true;
-            } else {
-                items.innerHTML = `<i class="fas fa-circle"></i>`;
-                items.id ="O";
-                items.style.pointerEvents = "none";
-                showChange.innerHTML = "Player O's Turn";
-                changeTurn = false;
-            }
+            items.innerHTML = `<i class="fas fa-times"></i>`;
             winningFunc();
             drawFunc();
             computerMove()
