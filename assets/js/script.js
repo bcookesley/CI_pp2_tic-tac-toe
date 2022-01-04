@@ -2,11 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // X => <i class="fas fa-times"></i>
-    // O => <i class="fas fa-circle-notch"></i>
-
     // Starting page tags
-    let startPage = document.querySelector("#startPage");
+    let startingPage = document.getElementById("startingPage");
     let button = document.getElementById("button");
     let enterGame = document.querySelectorAll(".enterGame");
 
