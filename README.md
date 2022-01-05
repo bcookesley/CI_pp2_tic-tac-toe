@@ -163,6 +163,9 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 
 ### Footer 
 
+- Displayed on all pages
+- Shows links to social media and the contact page 
+
 
 
 # Testing 
@@ -182,6 +185,12 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 ### Browser Compatability 
 
 ### User Story Testing 
+
+1. As a user, I want to play a game of Tic Tac Toe against the computer
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  Play Game | Navigate to game board and play game | Play game against computer | Worked as expected |
 
 
 # Bugs 
