@@ -90,6 +90,16 @@ This game was designed with simplicity in mind. As this is a classic, retro, eas
 
 ### Colour 
 
+### Font 
+
+### Layout 
+
+### Wireframes
+
+<details><summary>Start Page</summary>
+<image src="docs/wireframes/Starting Page - Tic Tac Toe.png">
+</details>
+
 
 
 
