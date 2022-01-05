@@ -77,3 +77,9 @@ This game was designed with simplicity in mind. As this is a classic, retro, eas
 
 - JavaScript Academy for the code and the walk through of how to make the game - https://www.youtube.com/channel/UCicOwFWkuMX0ddFaKCc_E5Q
     - Link to video - https://www.youtube.com/watch?v=B3pmT7Cpi24
+- Codepen Player vs Computer Tic Tac Toe - https://codepen.io/lando464/pen/BPGEKO
+- Kris Foster - https://www.youtube.com/watch?v=TD5EaIkhSTQ
+
+### Design 
+Some design elements are influenced by the below credits.
+- Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s
