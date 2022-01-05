@@ -82,7 +82,7 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
  - As a site owner, I want users to be able to clearly see some basic info on the game
 
 
-## Design 
+# Design 
 
 ### Design choices 
 
@@ -105,7 +105,7 @@ The sites layout is designed in a simple fashion that is user friendly and intui
     - A contact page 
     - 404 page
 
-## Technologies Used
+# Technologies Used
 
 ### Languages 
 
@@ -146,11 +146,22 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 
 ### Start Page 
 
+- Provides instructions on the game and a button to start the game 
+- Once clicked the start screen disappears and shows you the game board
 
 ### Game Page 
 
+- Game board shown with 9 boxes to fill with an X or and O
+- Header text showing which players turn it is 
+- When a player has had their turn the respective text is highlighted 
+
 
 ### Winning Page 
+
+- Once a player has won a winning page is displayed with either 'Player X' or 'Player O won the game'
+- A draw screen also appears in the same style when a draw has been reached
+
+### Footer 
 
 
 
