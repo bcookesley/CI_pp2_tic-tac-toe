@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box.innerText += 'X';
             box.id = 'X';
             showChange.style.left = `160px`;
+            showChange.style.opacity = `1`;
 
             isPlayerMove = false;
             computerMove();

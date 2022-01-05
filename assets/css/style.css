@@ -154,7 +154,7 @@ body {
 #showChange {
     position: absolute;
     top: 0;
-    left: 0;
+    opacity: 0;
     height: 60px;
     width: 160px;
     border-radius: 50px;
@@ -188,12 +188,48 @@ footer {
     bottom: 0;
 }
 
-footer p {
+footer a {
     float: right;
     margin-right: 60px;
     font-size: 20px;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-top: 5px;
 }
 
-footer p:hover {
+footer a:hover {
     color: #750808;
+}
+
+@media screen and (max-width: 320px) {
+
+    #container {
+        padding: 10px;
+    }
+
+    #game-page {
+        height: 400px;
+        width: 100%;
+    }
+
+    #game-board {
+        width: 320px;
+        grid-template-columns: 75px 75px 75px;
+        grid-gap: 10px;
+    }
+
+    .boxes {
+        width: 75px;
+        height: 75px;
+    }
+
+    footer {
+        position: relative;
+        bottom: -130px;
+    }
+
+    footer a {
+        font-size: 16px;
+        padding-top: 10px;
+    }
 }
