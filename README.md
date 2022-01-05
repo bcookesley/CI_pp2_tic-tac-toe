@@ -142,8 +142,42 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 
 
 
+# Features
+
+### Start Page 
 
 
+### Game Page 
+
+
+### Winning Page 
+
+
+
+# Testing 
+
+### HTML Validation 
+
+### CSS Validation 
+
+### JavaScript Validation 
+
+### Accessibility
+
+### Performance 
+
+### Performance Test on Various Devices 
+
+### Browser Compatability 
+
+### User Story Testing 
+
+
+# Bugs 
+
+
+
+# Deployment 
 
 
 
@@ -159,3 +193,6 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 ### Design 
 Some design elements are influenced by the below credits.
 - Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s
+
+
+# Acknowledgements 
