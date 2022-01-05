@@ -15,7 +15,13 @@
     1. [Target Audience](#target-audience)
     2. [User Stories](#user-stories)
     3. [Site Owner Stories](#site-owner-stories)
-3. 
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colour)
+    3. [Font](#font)
+    4. [Layout](#layout)
+    5. [Wireframes](#wireframes)
+
 
 
 
