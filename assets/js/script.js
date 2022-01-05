@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
             showChange.style.left = `160px`;
 
             isPlayerMove = false;
-            console.log('player moved, now computer move');
             computerMove();
+            console.log('player moved, now computer move');
         }
     }
 
