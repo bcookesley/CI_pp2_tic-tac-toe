@@ -17,17 +17,24 @@
         <!-- Starting Page -->
         <div id="start-page">
             <h2>Tic Tac Toe</h2>
-            <div id="line"></div>
             <div id="button">
-                <button id="enter" class="enterGame">Start Game</button>
+                <button id="enter" class="enterGame">Play Game</button>
             </div>
         </div>
-        <!-- Main Page -->
+
+        <div id="info">
+            <h2>Let's Play!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil, illo omnis, consequatur
+                perspiciatis praesentium nostrum doloremque ab aspernatur corrupti sint atque magni labore expedita
+                pariatur natus dolorum nisi obcaecati</p>
+        </div>
+
+        <!-- Game Page -->
         <div id="game-page">
-            <div id="player-display">
-                <div id="showChange">
-                    <span class="display-player player-X"></span>
-                </div>
+            <div id="turn-change">
+                <span id>X Turn</span>
+                <span id="O-Turn">O Turn</span>
+                <div id="showChange"></div>
             </div>
             <div id="game-board">
                 <div id="boxes"></div>
@@ -42,10 +49,10 @@
             </div>
         </div>
         <!-- Winner Page -->
-        <div id="winner">
-            <h2 id="winningName">Player X Wins The Game!</h2>
-            <div id="button">
-                <button id="reset">Play Again?</button>
+        <div id="winner-page">
+            <h2 id="winner-name">Player X Wins The Game!</h2>
+            <div id="reset-button">
+                <button id="quit">Play Again?</button>
             </div>
         </div>
     </div>
