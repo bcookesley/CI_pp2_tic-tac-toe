@@ -4,29 +4,68 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
 }
 
 body {
     display: grid;
     place-items: center;
     height: 100vh;
-    background: #191a20;
+    background: rgb(38, 38, 38);
+    color: rgb(221, 221, 221);
 }
 
 #container {
     height: auto;
     width: auto;
-    background: linear-gradient(to bottom, #000000 10%, #2b0e0e);
+    border: 4px solid #750808;
+    border-style: inset 2px 1px 2px rgb(5 5 5, 87%);
     border-radius: 20px;
     padding: 30px;
-    box-shadow: inset 1px 2px 0px rgb(255 255 255 / 18%), inset -2px -2px 2px rgb(0 0 0 / 65%);
 }
 
-#startPage {
-    height: 220px;
-    width: 400px;
+#container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#start-page {
+    width: 240px;
+    height: 480px;
+    display: block;
+    margin-left: 60px;
+}
+
+#start-page #button {
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+
+#button button {
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
+    background: #750808;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 10px;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgb(5 5 5 / 26%), -2px -2px 5px rgb(5 5 5 / 87%);
+    transition: 0.5s;
+}
+
+#start-page #button button:hover, 
+#winner-page #reset-button button:hover {
+    transition: 0.5s;
+    transform: scale(0.90);
 }
 
 #startPage h2, #winner h2 {
@@ -35,321 +74,107 @@ body {
     text-align: center;
 }
 
-#line {
-    height: 1px;
-    width: 100%;
-    background: rgb(207, 204, 204);
-    margin: 20px 0;
+#info {
+    width: 320px;
+    display: block;
+    margin-top: -280px;
+    background: rgb(32, 32, 32);
+    padding: 20px;
+    border-radius: 20px;
 }
 
-#startPage h4 {
-    font-size: 25px;
-    color: rgb(207, 204, 204);
+#info h2 {
+    font-size: 30px;
 }
 
-#buttons {
-    height: auto;
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    flex-direction: row;
+#info p {
+    text-align: center;
 }
 
-#button button {
-    height: 55px;
-    width: 180px;
-    cursor: pointer;
-    background: #e02929;
-    border: none;
-    outline: none;
-    color: #191a20;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px;
-    transform: scale(1);
-    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
-    transition: 0.5s;
-}
-
-#button button:first-child {
-    margin-right: 40px;
-}
-
-#button button:hover, #button button:hover {
-    transform: scale(0.9);
-}
-
-#winner {
+#game-page {
     display: none;
-}
-
-#winner #button {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#winner #button button {
-    margin-top: 20px;
-    background: #e02929;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 87%), -2px -2px 5px rgb(255 255 255 / 26%);
-    transform: scale(1);
-    transition: 0.5s;
-    cursor: pointer;
-    border-radius: 10px;
-    height: 55px;
-    width: 180px;
-}
-
-#winner #button button:hover {
-    transform: scale(0.9);
-}
-
-#main-page {
     height: 550px;
     width: 350px;
     padding: 20px;
     position: relative;
-    display: none;
 }
 
-#main-page #player-display {
-    font-size: 25px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    left: 10px;
-    justify-content: center;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-}
-
-#gameBoard {
-    height: 400px;
+#game-board {
+    height: 100px;
     width: 330px;
     position: absolute;
     top: 150px;
-    left: 10px;
+    right: 28px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
-#box {
+.boxes {
     height: 100px;
     width: 100px;
+    border: 3px solid rgb(0, 0, 0);
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
-}
-
-#box i {
     font-size: 60px;
-    color: #ffffff;
 }
 
-
-
-
-/*
-body {
-    background: #202020;
-    font-family: Quicksand, sans-serif;
-    color: whitesmoke;
-    padding: 0;
-    margin: 0;
-}
-
-#game-choice {
-    display: flex;
-    width: 50%;
-    z-index: 3;
+#game-page #turn-change {
+    height: 60px;
+    width: 320px;
+    border-radius: 50px;
     position: relative;
-    margin: auto;
-    top: -350px;
-    left: 200px;
-
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
 }
 
-#single-player {
-    margin-left: 8%;
-    width: 80%;
-    height: 150px;
-    font-size: 160%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background: #3a3a3a;
-    color: white;
-
-}
-
-#two-player {
-    margin-left: 8%;
-    width: 80%;
-    height: 150px;
-    font-size: 160%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background: #3a3a3a;
-    color: white;
-}
-
-#single-player:hover {
-    opacity: 0.8;
-    color: rgb(0, 255, 34);
-}
-
-#two-player:hover {
-    opacity: 0.8;
-    color: rgb(0, 255, 34);
-}
-
-
-.title {
-    background: black;
-    color: white;
+#game-page #turn-change span {
+    position: absolute;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    margin-top: 0;
-    padding: 10px;
+    padding-top: 10px;
+    color: #ffff;
+    z-index: 2;
 }
 
-.game-overview {
-    width: 30%;
-    float: left;
-    margin-left: 2em;
-    margin-top: -19.5em;
-    background: rgba(31, 202, 16, 0.2);
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 10px;
+#game-page #turn-change #O-Turn {
+    left: 160px;
+    z-index: 3;
 }
 
-.player-display {
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 4em;
-    margin-bottom: 1em;
+#showChange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: #750808;
+    z-index: 1;
+    transition: 0.2s;
 }
 
-.display {
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 4em;
-    margin-bottom: 1em;
-    margin-left: 33rem;
-}
-
-.hide {
+#winner-page {
     display: none;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.box {
-    border: 1px solid white;
-    min-width: 100px;
-    min-height: 100px;
+#reset-button button {
+    height: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    cursor: pointer;
-}
-
-.playerX {
-    color: green;
-}
-
-.playerO {
-    color: red;
-}
-
-.controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    margin-right: 32rem;
-}
-
-#reset {
-    background-color: #FF3860;
-    color: white;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
+    margin-top: 20px;
+    background: #750808;
+    color: #ffff;
     font-size: 20px;
-    margin-left: 33rem;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
 }
-
-#scores {
-    float: right;
-    margin-right: 20%;
-    position: relative;
-    top: -240px;
-    font-size: 160%;
-}
-
-#score {
-    color: green;
-    margin-left: 0.5em;
-}
-
-#loss {
-    color: red;
-    margin-left: 0.45em;
-}
-
-*/
-
-/* Media Queries for mobile 320px */
-
-/*
-
-@media (max-width: 320px) {
-
-    .title {
-        font-size: 100%;
-    }
-
-    .container {
-        margin-left: -20px;
-    }
-
-    .game-overview {
-        width: 80%;
-        margin-top: 9em;
-    }
-
-    .controls {
-        position: relative;
-        right: 495px;
-    }
-
-    #scores {
-        position: relative;
-        top: -565px;
-        left: 50px;
-    }
-    
-}
-*/

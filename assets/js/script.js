@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let winnerPage = document.getElementById("winner-page");
     let winningName = document.getElementById("winner-name");
     let reset = document.getElementById("quit");
-    isPlayerMove = true;
+    let isPlayerMove = true;
 
     // Winning combinations 
 
