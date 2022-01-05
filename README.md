@@ -96,6 +96,34 @@ Fonts used for this website were used from Google fonts. A choice for Quicksand 
 
 ### Layout 
 
+The sites layout is designed in a simple fashion that is user friendly and intuitive. When arriving at the site you are greeted with a simple start oage that includes some basic information about the game and a button to enter into the game. The site consists of 3 pages.
+
+    - A main page with 3 separate views:
+        - A start page with some basic game instructions and information
+        - A game page featuring a game board to play the game
+        - A winnning page that alerts the user of the winnner of the game
+    - A contact page 
+    - 404 page
+
+## Technologies Used
+
+### Languages 
+
+- HTML 
+- CSS
+- JavaScript
+
+### Frameworks and Tools
+
+- Git 
+- GitHub
+- GitPod
+- Favicon.io
+- Balsamiq
+- Google Fonts
+- Lighthouse
+- W3C Markup Validation Service
+- W3C Jigsaw CSS Validation Service
 
 
 ### Wireframes
