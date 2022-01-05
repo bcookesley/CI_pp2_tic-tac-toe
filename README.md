@@ -86,13 +86,17 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 
 ### Design choices 
 
-This game was designed with simplicity in mind. As this is a classic, retro, easy to play game - the design should reflect this. Not having an overly complicated design or an overwhelming amount of features keeps the design of this game simple and intuitive. 
+This game was designed with simplicity in mind. As this is a classic, retro, easy to play game - the design should reflect this. Not having an overly complicated design or an overwhelming amount of features keeps the design of this game simple and intuitive - and more importantly, easy to play.
 
 ### Colour 
 
 ### Font 
 
+Fonts used for this website were used from Google fonts. A choice for Quicksand was made with a backup of sans-serif as this conveyed and inkeeping with the simple, user-friendly design of the site. 
+
 ### Layout 
+
+
 
 ### Wireframes
 
