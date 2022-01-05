@@ -2,18 +2,13 @@
 
 (Developer: Ben Cookesley)
 
+[Live Webpage](https://bcookesley.github.io/CI_pp2_tic-tac-toe/)
+
 
 
 
 Tic Tac Toe (or Noughts and Crosses in the UK) is a familiar game that we all remember from our childhood. Here, you can challenge a truly great opponent - the computer. The computer will randomly pick boxes to put a "O" in and the user will play "X" and then strategy will ensue. 
 The object of the game is to get a row of three "X's" or three "O's" in any direction and once the user or the computer has achieved this, the game is over. Keep track of your score and keep playing the computer until you win, or hopefully, win all the time. 
-
-
-# Features 
-
-
-
-
 
 
 # Project Goals
@@ -29,6 +24,12 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 - Allow the user to keep score of their wins and losses
 - Provide a simple and easy to see and play game layout for the user 
 
+## Target Audience 
+
+- Casual gamers 
+- People who enjoy the classic game of Tic Tac Toe
+- Anyone looking for a quick and easy game to play 
+
 ## User Experience 
 
 ### Target Audience 
@@ -37,12 +38,23 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 - People looking for a quick and easy game to play
 
 
-## User Stories 
+### User Stories 
 
 - As a user, I want to play a game of Tic Tac Toe against the computer
 - As a user, I want to see some game play information 
 - As a user, I want to to be able to replay the game without having to refresh the page
 - As a user, I want to quickly play a game 
+
+### Site Owner Stories 
+
+ - As a site owner, I want users to be able to play a quick game of Tic Tac Toe
+ - As a site owner, I want users to be able to replay the game without having to refresh the page
+ - As a site owner, I want users to be able to clearly see some basic info on the game
+
+
+ ## Design 
+
+
 
 
 
