@@ -35,14 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     button.onclick = function () {
-        if(startPage.style.display !== "none") {
-            startPage.style.display = "none";
+        if(startingPage.style.display !== "none") {
+            startingPage.style.display = "none";
+            info.style.display = "none";
         } else {
-            startPage.style.display = "block";
+            startingPage.style.display = "block";
         }
-        mainPage.style.display = "block";
-        HumanPlayer();
-        Board();
+        gamePage.style.display = "block";
+        info.style.display = "none";
+        console.log('start game');
+        
     }
 
     
