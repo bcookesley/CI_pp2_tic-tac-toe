@@ -12,6 +12,10 @@
     1. [User Goals](#user-goals)
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Stories](#user-stories)
+    3. [Site Owner Stories](#site-owner-stories)
+3. 
 
 
 
