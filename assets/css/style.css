@@ -62,13 +62,14 @@ body {
     transition: 0.5s;
 }
 
-#start-page #button button:hover, 
+#start-page #button button:hover,
 #winner-page #reset-button button:hover {
     transition: 0.5s;
     transform: scale(0.90);
 }
 
-#startPage h2, #winner h2 {
+#startPage h2,
+#winner h2 {
     font-size: 50px;
     color: rgb(207, 204, 204);
     text-align: center;
