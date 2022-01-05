@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let reset = document.getElementById("quit");
     isPlayerMove = true;
 
+    // Winning combinations 
+
     let winningCombos = [
         [0, 1, 2],
         [3, 4, 5],
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+    // Starting page. When button is clicked the start page disappears and game board shows
 
     button.onclick = function () {
         if(startingPage.style.display !== "none") {
@@ -46,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('start game');
     }
 
+    // click function for player to add an X in a box for their move 
+
     boxes.forEach(box => box.addEventListener('click', event => {
 
         if (isPlayerMove === true) {
@@ -55,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }))
 
 
-
+    // player move function linked to click function above 
 
     function playerMove(event, box) {
 
@@ -70,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Computer move function. Moves an O into a random empty box
+
     function computerMove(event, box) {
         let i = 0;
 
@@ -81,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('computer move, now player move');
         }
     }
+
+    // Winning function will loop through winning combos to determine the winner 
 
     let winningFunc = () => {
         for (let a = 0; a <= 7; a++) {
