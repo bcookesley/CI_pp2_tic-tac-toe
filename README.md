@@ -100,6 +100,14 @@ This game was designed with simplicity in mind. As this is a classic, retro, eas
 <image src="docs/wireframes/Starting Page - Tic Tac Toe.png">
 </details>
 
+<details><summary>Game Page</summary>
+<image src="docs/wireframes/Game Page - Tic Tac Toe.png">
+</details>
+
+<details><summary>Winning Page</summary>
+<img src="docs/wireframes/Winning Page - Tic Tac Toe.png">
+</details>
+
 
 
 
