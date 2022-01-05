@@ -44,7 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
         gamePage.style.display = "block";
         info.style.display = "none";
         console.log('start game');
-        
+    }
+
+    boxes.forEach(box => box.addEventListener('click', event => {
+
+        if (isPlayerMove === true) {
+            playerMove(event, box);
+            console.log('player event listener');
+        }
+    }))
+
+    function playerMove(event, box) {
+
+        if (box.innerText == '') {
+            box.innerText += 'X';
+            box.id = 'X';
+            showChange.style.left = `160px`;
+
+            isPlayerMove = false;
+            console.log('player moved, now computer move');
+            computerMove();
+        }
     }
 
     
