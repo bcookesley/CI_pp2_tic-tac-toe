@@ -29,12 +29,21 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 - Allow the user to keep score of their wins and losses
 - Provide a simple and easy to see and play game layout for the user 
 
-# User Experience 
+## User Experience 
 
 ### Target Audience 
 - Casual gamers 
 - People who like the classic game of tic-tac-toe
 - People looking for a quick and easy game to play
+
+
+## User Stories 
+
+- As a user, I want to play a game of Tic Tac Toe against the computer
+- As a user, I want to see some game play information 
+- As a user, I want to to be able to replay the game without having to refresh the page
+- As a user, I want to quickly play a game 
+
 
 
 
