@@ -3,19 +3,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Starting page tags
-    let startingPage = document.getElementById("startingPage");
+    let startingPage = document.getElementById("start-page");
     let button = document.getElementById("button");
-    let enterGame = document.querySelectorAll(".enterGame");
+    let info = document.getElementById("info");
 
     // Main page tags 
-    let mainPage = document.querySelector("#main-page");
-    let box = document.querySelectorAll("#box");
+    let gamePage = document.getElementById("game-page");
+    let boxes = document.querySelectorAll(".boxes");
     let showChange = document.querySelector("#showChange");
+    let board = Array.from(boxes);
 
     // Winner page tags 
-    let winner = document.querySelector("#winner");
-    let winningName = document.querySelector("winningName");
-    let reset = document.querySelector("#reset");
+    let winnerPage = document.getElementById("winner-page");
+    let winningName = document.getElementById("winner-name");
+    let reset = document.getElementById("quit");
 
     const ticTacToeGame = new TicTacToeGame();
     //ticTacToeGame.start();
