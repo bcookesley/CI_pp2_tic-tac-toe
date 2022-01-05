@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Starting page. When button is clicked the start page disappears and game board shows
 
     button.onclick = function () {
-        if(startingPage.style.display !== "none") {
+        if (startingPage.style.display !== "none") {
             startingPage.style.display = "none";
             info.style.display = "none";
         } else {
@@ -110,11 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Draw function to determine if the game is a draw 
+
     let drawFunc = () => {
 
-        if (boxes[0].id != "" && boxes[1].id != "" && boxes[2].id != ""
-        && boxes[3].id != "" && boxes[4].id != "" && boxes[5].id != "" && boxes[6].id != ""
-        && boxes[7].id != "" && boxes[8].id != "") {
+        if (boxes[0].id != "" && boxes[1].id != "" && boxes[2].id != "" &&
+            boxes[3].id != "" && boxes[4].id != "" && boxes[5].id != "" && boxes[6].id != "" &&
+            boxes[7].id != "" && boxes[8].id != "") {
             winningName.innerText = `Game Draw!`;
 
             gamePage.style.display = "none";
@@ -122,7 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    
+    quit.addEventListener('click', () => {
+        window.location.reload();
+    })
+
+
 
 
 
