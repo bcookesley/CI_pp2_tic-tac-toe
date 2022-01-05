@@ -82,6 +82,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let winningFunc = () => {
+        for (let a = 0; a <= 7; a++) {
+            let b = winningCombos[a];
+
+            if (boxes[b[0]].id == '' || boxes[b[1]].id == '' || boxes[b[2]].id == '') {
+                continue;
+            } else if (boxes[b[0]].id == 'X' || boxes[b[1]].id == 'X' || boxes[b[2]].id == 'X') {
+                winningName.innerText = `Player X Wins The Game!`;
+                gamePage.style.display = "none";
+                winnerPage.style.display = "block";
+            } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
+                winningName.innerText = `Player O Wins The Game!`;
+                gamePage.style.display = "none";
+                winnerPage.style.display = "block";
+            } else {
+                continue;
+            }
+        }
+    }
+
     
 
 
