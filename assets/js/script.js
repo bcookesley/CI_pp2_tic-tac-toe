@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }))
 
+
+
+
     function playerMove(event, box) {
 
         if (box.innerText == '') {
@@ -64,6 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
             isPlayerMove = false;
             console.log('player moved, now computer move');
             computerMove();
+        }
+    }
+
+    function computerMove(event, box) {
+        let i = 0;
+
+        while (board[i] < 8) {
+            Math.floor(Math.random) * (board.length);
+            box.innerText += 'O';
+            box.id = 'O';
+
+            console.log('computer move, now player move');
         }
     }
 
