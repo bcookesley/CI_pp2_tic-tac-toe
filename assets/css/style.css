@@ -180,6 +180,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 #game-page #turn-change span {
@@ -266,6 +267,7 @@ footer a:hover {
 
     #container h2 {
         font-size: 20px;
+        padding-top: 10px;
     }
 
     #start-page h2 {
@@ -328,6 +330,8 @@ footer a:hover {
 
     #showChange {
         width: 100px;
+        margin-top: 12px;
+        height: 40px;
     }
 
     #feedback {
@@ -386,7 +390,7 @@ footer a:hover {
         padding-top: 10px;
         display: flex;
         margin-right: 0;
-        margin-left: 50px;
+        margin-left: 45px;
         margin-top: 6px;
     }
 }
