@@ -54,6 +54,10 @@ body {
     left: 300px;
 }
 
+#feedback {
+    margin-bottom: 10px;
+}
+
 .submit-btn {
     float: right;
     background: #750808;
