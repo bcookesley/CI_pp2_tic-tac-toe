@@ -306,6 +306,14 @@ footer a:hover {
         font-size: 14px;
     }
 
+    #feedback {
+        margin-top: 10px;
+    }
+
+    #contact {
+        display: flex;
+    }
+
     footer {
         position: relative;
         bottom: -130px;
@@ -314,5 +322,9 @@ footer a:hover {
     footer a {
         font-size: 16px;
         padding-top: 10px;
+        display: flex;
+        margin-right: 0;
+        margin-left: 50px;
+        margin-top: 6px;
     }
 }
