@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             isPlayerMove = false;
             computerMove();
+            winningFunc();
+            drawFunc();
             console.log('player moved, now computer move');
         }
     }
