@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
             showChange.style.opacity = `1`;
 
             isPlayerMove = false;
-            computerMove();
             winningFunc();
             drawFunc();
+            computerMove();
             console.log('player moved, now computer move');
         }
     }
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
             box.innerText += 'O';
             box.id = 'O';
 
-            console.log('computer move, now player move');
         }
+        console.log('computer move, now player move');
     }
 
     // Winning function will loop through winning combos to determine the winner 
@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 continue;
             }
         }
+        console.log('winning function');
     }
 
     // Draw function to determine if the game is a draw 
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gamePage.style.display = "none";
             winnerPage.style.display = "block";
         }
+        console.log('draw function');
     }
 
     quit.addEventListener('click', () => {
