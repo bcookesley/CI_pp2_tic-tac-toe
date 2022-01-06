@@ -1,5 +1,7 @@
 # <strong>Tic Tac Toe</strong>
 
+![Mockup Image](docs/am-i-responsive.png)
+
 (Developer: Ben Cookesley)
 
 [Live Webpage](https://bcookesley.github.io/CI_pp2_tic-tac-toe/)
