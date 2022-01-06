@@ -73,7 +73,7 @@ The object of the game is to get a row of three "X's" or three "O's" in any dire
 - As a user, I want to play a game of Tic Tac Toe against the computer
 - As a user, I want to see some game play information 
 - As a user, I want to to be able to replay the game without having to refresh the page
-- As a user, I want to quickly play a game 
+- As a user, I want to contact someone about the game 
 
 ### Site Owner Stories 
 
@@ -191,6 +191,51 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |  Play Game | Navigate to game board and play game | Play game against computer | Worked as expected |
+
+
+2. As a user, I want to see some gameplay information 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start Page  | Navigate to site and see game info | See info on start page | Worked as expected |
+
+
+3. As a user, I want to be able to replay the game without having to refresh the page
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Winning Page | Win, lose or draw game | See winning page pop up when game is over | Worked as expected |
+
+
+4. As a user, I want to contact someone about the game 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer | Navigate to footer at bottom of page | Find the contact us button | Worked as expected |
+
+
+### Site Owner Story Testing 
+
+5. As a site owner, I want users to be able to play a quick game of Tic Tac Toe
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Site | Navigate to site | Find the game of Tic Tac Toe | Worked as expected |
+
+
+6. As a site owner, I want users to be able to replay the game without having to refresh the page
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Winning Page | Win, lose or draw the game | Winning page pops up with a play again button | Worked as expected |
+
+
+7. As a site owner, I want users to be able to clearly see some basic info on the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start page | Navigate to site and see game info | Find game info on start page | Worked as expected |
+
 
 
 # Bugs 
