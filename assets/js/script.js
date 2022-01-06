@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // player move function linked to click function above 
-
     function playerMove(event, box) {
 
         if (box.innerText == '') {
@@ -83,29 +82,26 @@ document.addEventListener('DOMContentLoaded', () => {
     function computerMove() {
         var emptyCells = [];
         var random;
-      
-      /*  for (var i = 0; i < cells.length; i++) {
-          if (cells[i].textContent == '') {
-            emptyCells.push(cells[i]);
-          }
-        }*/
         
         board.forEach(function(cell){
           if (cell.textContent == '') {
             emptyCells.push(cell);
+            cell.id = 'O';
           }
         }); 
         
         // computer marks a random EMPTY cell
         random = Math.ceil(Math.random() * emptyCells.length) - 1;
-        emptyCells[random].textContent = 'O';
+        emptyCells[random].innerText = 'O';
+        //showChange.style.right += `160px`;
         console.log('computer move, now player move');
+        showChange.style.right += `160px`;
         winningFunc();
         drawFunc();
       }
-
-
+      
     
+      /*
     function oldComputerMove(event, box) {
         let i = 0;
 
@@ -117,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         console.log('computer move, now player move');
     }
+    */
     
 
     // Winning function will loop through winning combos to determine the winner 
@@ -131,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winningName.innerText = `Player X Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
-            } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
+            } else if (cell[b[0]].id == 'O' || cell[b[1]].id == 'O' || cell[b[2]].id == 'O') {
                 winningName.innerText = `Player O Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
