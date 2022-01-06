@@ -203,24 +203,57 @@ footer a:hover {
 
 @media screen and (max-width: 320px) {
 
+    body {
+        height: 0;
+    }
+
     #container {
-        padding: 10px;
+        width: 100vw;
+        padding: 15px;
+    }
+
+    #start-page h2 {
+        padding-right: 20px;
+    }
+
+    #button {
+        position: relative;
+        right: 10px;
+    }
+
+    #turn-change {
+        padding-left: 0;
     }
 
     #game-page {
         height: 400px;
         width: 100%;
+        padding: 0;
     }
 
     #game-board {
         width: 320px;
         grid-template-columns: 75px 75px 75px;
         grid-gap: 10px;
+        left: 40px;
+        top: 100px;
     }
 
     .boxes {
         width: 75px;
         height: 75px;
+    }
+
+    #info {
+        width: 280px;
+    }
+
+    #info h2 {
+        font-size: 20px;
+    }
+
+    #info p {
+        font-size: 14px;
     }
 
     footer {
