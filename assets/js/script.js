@@ -86,13 +86,12 @@ document.addEventListener('DOMContentLoaded', () => {
         board.forEach(function(cell){
           if (cell.textContent == '') {
             emptyCells.push(cell);
-            cell.id = 'O';
           }
         }); 
         
         // computer marks a random EMPTY cell
         random = Math.ceil(Math.random() * emptyCells.length) - 1;
-        emptyCells[random].innerText = 'O';
+        emptyCells[random].innerText = 'O'; // Empty cells variable could be the i.d???
         //showChange.style.right += `160px`;
         console.log('computer move, now player move');
         showChange.style.right += `160px`;
