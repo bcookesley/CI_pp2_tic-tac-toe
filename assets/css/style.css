@@ -260,8 +260,12 @@ footer a:hover {
 
     #container {
         width: 100vw;
-        padding: 15px;
+        padding: 0;
         height: 75vh;
+    }
+
+    #container h2 {
+        font-size: 20px;
     }
 
     #start-page h2 {
@@ -334,6 +338,42 @@ footer a:hover {
         display: flex;
         position: fixed;
         bottom: 0;
+    }
+
+    form {
+        width: 200px;
+        margin-left: -20px;
+    }
+
+    .mssg-area label {
+        font-size: 12px;
+    }
+
+    .mssg-area input {
+        width: 200px
+    }
+
+    .input-message {
+        left: 29px;
+        top: 5px;
+        position: relative;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+        position: relative;
+        left: 90px;
+    }
+
+    #back-btn {
+        position: relative;
+        left: 20px;
+    }
+
+    #back-btn a {
+        font-size: 14px;
+        padding: 7px;
     }
 
     footer {
