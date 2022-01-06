@@ -29,6 +29,43 @@ body {
     font-size: 40px;
     margin-bottom: 30px;
 }
+/*
+#container form {
+    /*display: inline-block;
+}
+*/
+
+.mssg-area {
+    margin-bottom: 10px;
+    width: 320px;
+    text-align: right;
+}
+
+.input-message {
+    position: absolute;
+    bottom: 385px;
+    left: 300px;
+}
+
+.submit-btn {
+    float: right;
+    background: #750808;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#back-btn > button {
+    background: #750808;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    float: left;
+    display: flex;
+}
 
 #start-page {
     width: 240px;

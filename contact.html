@@ -12,35 +12,33 @@
 </head>
 
 <body>
-
-    <div id="back-btn">
-        <button id="enter" class="enterGame">Back to Game</button>
-    </div>
     <div id="container">
         <h2>Contact Us</h2>
         <form action="https://formdump.codeinstitute.net" method="POST">
-            <div>
+            <div class="mssg-area">
                 <label for="fname">First Name</label>
                 <input type="text" name="fname" id="fname" placeholder="First Name">
             </div>
-            <div>
+            <div class="mssg-area">
                 <label for="lname">Last Name</label>
                 <input type="text" name="lname" id="lname" placeholder="Last Name">
             </div>
-            <div>
+            <div class="mssg-area">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" placeholder="Email Address">
             </div>
-            <div>
-                <label for="message">Your Message</label>
+            <div class="mssg-area">
+                <label for="message" class="input-message">Your Message</label>
                 <textarea name="message" id="feedback" cols="30" rows="10"
                     placeholder="Your message here..."></textarea>
             </div>
             <div>
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
-
         </form>
+        <div id="back-btn">
+            <button id="enter" class="enterGame">Back to Game</button>
+        </div>
     </div>
     <footer id="contact"><a href="./contact.html">Contact Us</a></footer>
 
