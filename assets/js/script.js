@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     boxes.forEach(box => box.addEventListener('click', event => {
 
-        if (isPlayerMove === true) {
+       // if (isPlayerMove === true) {
             playerMove(event, box);
             console.log('player event listener');
-        }
+        //}
     }))
 
 
@@ -72,14 +72,41 @@ document.addEventListener('DOMContentLoaded', () => {
             isPlayerMove = false;
             winningFunc();
             drawFunc();
-            computerMove();
             console.log('player moved, now computer move');
+            computerMove();
         }
     }
 
     // Computer move function. Moves an O into a random empty box
 
-    function computerMove(event, box) {
+
+    function computerMove() {
+        var emptyCells = [];
+        var random;
+      
+      /*  for (var i = 0; i < cells.length; i++) {
+          if (cells[i].textContent == '') {
+            emptyCells.push(cells[i]);
+          }
+        }*/
+        
+        board.forEach(function(cell){
+          if (cell.textContent == '') {
+            emptyCells.push(cell);
+          }
+        }); 
+        
+        // computer marks a random EMPTY cell
+        random = Math.ceil(Math.random() * emptyCells.length) - 1;
+        emptyCells[random].textContent = 'O';
+        console.log('computer move, now player move');
+        winningFunc();
+        drawFunc();
+      }
+
+
+    
+    function oldComputerMove(event, box) {
         let i = 0;
 
         while (board[i] < 8) {
@@ -90,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         console.log('computer move, now player move');
     }
+    
 
     // Winning function will loop through winning combos to determine the winner 
 
