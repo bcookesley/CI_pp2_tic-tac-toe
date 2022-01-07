@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winningName.innerText = `Player X Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
-            } else if (boxes[b].innerText === 'O' || boxes[b].innerText === 'O' || boxes[b].innerText === 'O') {
+            } else if (boxes[b[0]].innerText === 'O' || boxes[b[1]].innerText === 'O' || boxes[b[2]].innerText === 'O') {
                 winningName.innerText = `Player O Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
