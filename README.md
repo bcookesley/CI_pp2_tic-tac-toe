@@ -127,6 +127,15 @@ The sites layout is designed in a simple fashion that is user friendly and intui
 - W3C Markup Validation Service
 - W3C Jigsaw CSS Validation Service
 
+interaciveness 
+notification 
+feedback 
+validation 
+responsiveness
+
+
+emailJS
+
 
 ### Wireframes
 
