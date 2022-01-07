@@ -72,7 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
             winningFunc();
             drawFunc();
             console.log('player moved, now computer move');
-            computerMove();
+            let randomTimeDelay = ((Math.random() * 1000) + 200).toFixed(); // delays computer move - code snippet taken from Code Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
+            setTimeout(()=>{
+                computerMove();
+                showChange.style.right = `160px`;
+            }, randomTimeDelay);
         }
     }
 
@@ -86,10 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
         boxes.forEach(function(cell){
           if (cell.textContent == '') {
             emptyCells.push(cell);
+            showChange.style.right = `160px`;
             //cell.id = 'O';
           } else {
             cell.id = 'O';
-            showChange.style.right = `160px`;
           }
         }); 
         
