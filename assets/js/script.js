@@ -3,17 +3,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Starting page tags
+
     let startingPage = document.getElementById("start-page");
     let button = document.getElementById("button");
     let info = document.getElementById("info");
 
-    // Main page tags 
+    // Game page tags 
+
     let gamePage = document.getElementById("game-page");
     let boxes = document.querySelectorAll(".boxes");
     let showChange = document.querySelector("#showChange");
     let board = Array.from(boxes);
 
     // Winner page tags 
+
     let winnerPage = document.getElementById("winner-page");
     let winningName = document.getElementById("winner-name");
     let reset = document.getElementById("quit");
@@ -51,11 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // click function for player to add an X in a box for their move 
 
     boxes.forEach(box => box.addEventListener('click', event => {
-
-       // if (isPlayerMove === true) {
-            playerMove(event, box);
-            console.log('player event listener');
-        //}
+        playerMove(event, box);
+        console.log('player event listener');
     }))
 
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             drawFunc();
             console.log('player moved, now computer move');
             let randomTimeDelay = ((Math.random() * 1000) + 200).toFixed(); // delays computer move - code snippet taken from Code Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
-            setTimeout(()=>{
+            setTimeout(() => {
                 computerMove();
                 showChange.style.right = `160px`;
             }, randomTimeDelay);
@@ -81,49 +81,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Computer move function. Moves an O into a random empty box
-
+    // Code snippet heavily influenced by Codepen.io - https://codepen.io/lando464/pen/BPGEKO
 
     function computerMove() {
         let emptyCells = [];
         let random;
-        
-        boxes.forEach(function(cell){
-          if (cell.innerText == '') {
-            emptyCells.push(cell);
-            showChange.style.right = `160px`;
-            //cell.id = 'O';
-          } else {
-            cell.id = 'O';
-          }
-        }); 
-        
+
+        boxes.forEach(function (cell) {
+            if (cell.innerText == '') {
+                emptyCells.push(cell);
+                showChange.style.right = `160px`;
+            } else {
+                cell.id = 'O';
+            }
+        });
+
         // computer marks a random EMPTY cell
         random = Math.ceil(Math.random() * emptyCells.length) - 1;
-        emptyCells[random].innerText = 'O'; // Empty cells variable could be the i.d???
-        //cell.id = 'O';
-        //boxes.id = 'O';
-        //showChange.style.right += `160px`;
+        emptyCells[random].innerText = 'O'; 
         console.log('computer move, now player move');
-        //showChange.style.right = `160px`;
         winningFunc();
         drawFunc();
-      }
-      
-    
-      /*
-    function oldComputerMove(event, box) {
-        let i = 0;
-
-        while (board[i] < 8) {
-            Math.floor(Math.random) * (board.length);
-            box.innerText += 'O';
-            box.id = 'O';
-
-        }
-        console.log('computer move, now player move');
     }
-    */
-    
+
 
     // Winning function will loop through winning combos to determine the winner 
     // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
@@ -166,12 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('draw function');
     }
 
-    quit.addEventListener('click', () => {
+    reset.addEventListener('click', () => {
         window.location.reload();
     })
-
-
-
-
 
 });
