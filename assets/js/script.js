@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let randomTimeDelay = ((Math.random() * 1000) + 200).toFixed(); // delays computer move - code snippet taken from Code Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
             setTimeout(() => {
                 computerMove();
-                showChange.style.right = `160px`;
+                //showChange.style.right = `160px`;
             }, randomTimeDelay);
         }
     }
@@ -90,15 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
         boxes.forEach(function (cell) {
             if (cell.innerText == '') {
                 emptyCells.push(cell);
-                showChange.style.right = `160px`;
-            } else {
-                cell.id = 'O';
-            }
+            } 
         });
 
         // computer marks a random EMPTY cell
         random = Math.ceil(Math.random() * emptyCells.length) - 1;
-        emptyCells[random].innerText = 'O'; 
+        emptyCells[random].innerText = 'O';
+        showChange.style.left = `160px`;
         console.log('computer move, now player move');
         winningFunc();
         drawFunc();
@@ -118,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winningName.innerText = `Player X Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
-            } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
+            } else if (boxes[b].innerText === 'O' || boxes[b].innerText === 'O' || boxes[b].innerText === 'O') {
                 winningName.innerText = `Player O Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
