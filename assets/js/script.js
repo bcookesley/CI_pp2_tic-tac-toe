@@ -83,18 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
         var emptyCells = [];
         var random;
         
-        board.forEach(function(cell){
+        boxes.forEach(function(cell){
           if (cell.textContent == '') {
             emptyCells.push(cell);
+            //cell.id = 'O';
+          } else {
+            cell.id = 'O';
+            showChange.style.right = `160px`;
           }
         }); 
         
         // computer marks a random EMPTY cell
         random = Math.ceil(Math.random() * emptyCells.length) - 1;
         emptyCells[random].innerText = 'O'; // Empty cells variable could be the i.d???
+        //cell.id = 'O';
+        //boxes.id = 'O';
         //showChange.style.right += `160px`;
         console.log('computer move, now player move');
-        showChange.style.right += `160px`;
+        //showChange.style.right = `160px`;
         winningFunc();
         drawFunc();
       }
@@ -127,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winningName.innerText = `Player X Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
-            } else if (cell[b[0]].id == 'O' || cell[b[1]].id == 'O' || cell[b[2]].id == 'O') {
+            } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
                 winningName.innerText = `Player O Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
