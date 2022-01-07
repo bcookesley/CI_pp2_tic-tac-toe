@@ -102,9 +102,32 @@ document.addEventListener('DOMContentLoaded', () => {
         drawFunc();
     }
 
+    let winningFunc = () => {
+        for (let a = 0; a <= 7; a++) {
+            let b = winningCombos[a];
+
+            if (board[b[0]].innerText == '' || board[b[1]].innerText == '' || board[b[2]].innerText == '') {
+                continue;
+            } else if (board[b[0]].innerText == 'X' || board[b[1]].innerText == 'X' || board[b[2]].innerText == 'X') {
+                winningName.innerText = `Player X Wins The Game!`;
+                gamePage.style.display = "none";
+                winnerPage.style.display = "block";
+            } else if (board[b[0]].innerText == 'O' || board[b[1]].innerText == 'O' || board[b[2]].innerText == 'O') {
+                winningName.innerText = `Player O Wins The Game!`;
+                gamePage.style.display = "none";
+                winnerPage.style.display = "block";
+            } else {
+                continue;
+            }
+        }
+        console.log('winning function');
+    }
+
 
     // Winning function will loop through winning combos to determine the winner 
     // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+
+    /*
 
     let winningFunc = () => {
         for (let a = 0; a <= 7; a++) {
@@ -126,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         console.log('winning function');
     }
+    */
 
     // Draw function to determine if the game is a draw 
     // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
