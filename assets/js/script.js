@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function computerMove() {
-        var emptyCells = [];
-        var random;
+        let emptyCells = [];
+        let random;
         
         boxes.forEach(function(cell){
-          if (cell.textContent == '') {
+          if (cell.innerText == '') {
             emptyCells.push(cell);
             showChange.style.right = `160px`;
             //cell.id = 'O';
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     // Winning function will loop through winning combos to determine the winner 
+    // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
 
     let winningFunc = () => {
         for (let a = 0; a <= 7; a++) {
@@ -149,6 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Draw function to determine if the game is a draw 
+    // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+
 
     let drawFunc = () => {
 
