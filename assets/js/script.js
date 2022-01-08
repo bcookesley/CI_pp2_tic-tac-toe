@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let b = winningCombos[a];
 
             if (boxes[b[0]].id == '' || boxes[b[1]].id == '' || boxes[b[2]].id == '') {
+                gameOver = false;
                 continue;
             } else if (boxes[b[0]].id == 'X' || boxes[b[1]].id == 'X' || boxes[b[2]].id == 'X') {
                 gameOver = true;
@@ -156,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('player o wins');
                 }, 700);
             } else {
+                gameOver = false;
                 continue;
             }
         }
