@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (boxes[0].id != "" && boxes[1].id != "" && boxes[2].id != "" &&
             boxes[3].id != "" && boxes[4].id != "" && boxes[5].id != "" && boxes[6].id != "" &&
             boxes[7].id != "" && boxes[8].id != "") {
+            gameOver = true;
             winningName.innerText = `Game Draw!`;
 
             gamePage.style.display = "none";
