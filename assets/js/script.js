@@ -142,10 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (boxes[b[0]].id == '' || boxes[b[1]].id == '' || boxes[b[2]].id == '') {
                 continue;
             } else if (boxes[b[0]].id == 'X' || boxes[b[1]].id == 'X' || boxes[b[2]].id == 'X') {
+                gameOver = true;
                 winningName.innerText = `Player X Wins The Game!`;
                 gamePage.style.display = "none";
                 winnerPage.style.display = "block";
-                gameOver = true;
                 console.log('player x wins');
             } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
                 setTimeout (() => {
