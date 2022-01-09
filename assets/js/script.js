@@ -149,8 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 winnerPage.style.display = "block";
                 console.log('player x wins');
             } else if (boxes[b[0]].id == 'O' || boxes[b[1]].id == 'O' || boxes[b[2]].id == 'O') {
+                gameOver = true;
                 setTimeout (() => {
-                    gameOver = true;
                     winningName.innerText = `Player O Wins The Game!`;
                     gamePage.style.display = "none";
                     winnerPage.style.display = "block";
