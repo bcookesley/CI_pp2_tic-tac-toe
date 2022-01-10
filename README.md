@@ -251,6 +251,8 @@ emailJS
 
 # Bugs 
 
+- Iteration through winning and draw functions not working correctly. Code continues to be executed after the result is drawn. 
+
 
 
 # Deployment 
@@ -265,6 +267,10 @@ emailJS
     - Link to video - https://www.youtube.com/watch?v=B3pmT7Cpi24
 - Codepen Player vs Computer Tic Tac Toe - https://codepen.io/lando464/pen/BPGEKO
 - Kris Foster - https://www.youtube.com/watch?v=TD5EaIkhSTQ
+- Code Institute - Love Maths walkthrough project 
+- Coding Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
+- Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (Winning and draw functions logic)
+
 
 ### Design 
 Some design elements are influenced by the below credits.
@@ -272,3 +278,13 @@ Some design elements are influenced by the below credits.
 
 
 # Acknowledgements 
+
+I would like to thank the following people for their support through this project. 
+
+- Code institute for the tutor time and example project to help as a guide 
+- Mo Shami for the words of wisdom and guidance 
+- My partner Cazz for her continuous love and support
+
+### Notes 
+
+- Due to sickness this project could not be completed abd had to be handed in for a deadline 

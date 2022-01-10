@@ -1,3 +1,7 @@
+ /**
+  * Code snippet taken from EmailJS - instructions are in the site for this
+  */
+ 
  window.onload = function () {
      document.getElementById('contact-form').addEventListener('submit', function (event) {
          event.preventDefault();
@@ -12,6 +16,10 @@
              messageSent();
      });
  }
+
+ /**
+  * Add HTML when message is sent 
+  */
 
  function messageSent() {
      let html = `

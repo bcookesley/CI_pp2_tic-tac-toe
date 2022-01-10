@@ -1,21 +1,29 @@
-// Waits for DOM content to load
+/**
+ * Waits for DOM content to load
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Starting page tags
+    /**
+     * Starting page tags
+     */
 
     let startingPage = document.getElementById("start-page");
     let button = document.getElementById("button");
     let info = document.getElementById("info");
 
-    // Game page tags 
+    /**
+     * Game page tags 
+     */
 
     let gamePage = document.getElementById("game-page");
     let boxes = document.querySelectorAll(".boxes");
     let showChange = document.querySelector("#showChange");
     let board = Array.from(boxes);
 
-    // Winner page tags 
+    /**
+     * Winner page tags
+     */
 
     let winnerPage = document.getElementById("winner-page");
     let winningName = document.getElementById("winner-name");
@@ -23,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let isPlayerMove = true;
     let gameOver = false;
 
-    // Winning combinations 
+    /**
+     * Winning combinations 
+     */
 
     let winningCombos = [
         [0, 1, 2],
@@ -52,15 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('start game');
     }
 
-    // click function for player to add an X in a box for their move 
+    /**
+     * click function for player to add an X in a box for their move 
+     */
 
     boxes.forEach(box => box.addEventListener('click', event => {
         playerMove(event, box);
         console.log('player event listener');
     }))
 
+    /** 
+    *  player move function linked to click function above 
+    */
 
-    // player move function linked to click function above 
     function playerMove(event, box) {
 
         if (box.innerText == '') {
@@ -76,13 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
             let randomTimeDelay = ((Math.random() * 1000) + 200).toFixed(); // delays computer move - code snippet taken from Code Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
             setTimeout(() => {
                 computerMove();
-                //showChange.style.right = `160px`;
             }, randomTimeDelay);
         }
     }
 
-    // Computer move function. Moves an O into a random empty box
-    // Code snippet heavily influenced by Codepen.io - https://codepen.io/lando464/pen/BPGEKO
+    /**
+     * Computer move function. Moves an O into a random empty box
+     * Code snippet slightly copied and heavily influenced by Codepen.io - https://codepen.io/lando464/pen/BPGEKO
+     */
 
     function computerMove() {
         let emptyCells = [];
@@ -105,34 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
         drawFunc();
     }
 
-    /*
-
-    let winningFunc = () => {
-        for (let a = 0; a <= 7; a++) {
-            let b = winningCombos[a];
-
-            if (board[b[0]].innerText == '' || board[b[1]].innerText == '' || board[b[2]].innerText == '') {
-                continue;
-            } else if (board[b[0]].innerText == 'X' || board[b[1]].innerText == 'X' || board[b[2]].innerText == 'X') {
-                winningName.innerText = `Player X Wins The Game!`;
-                gamePage.style.display = "none";
-                winnerPage.style.display = "block";
-            } else if (board[b[0]].innerText == 'O' || board[b[1]].innerText == 'O' || board[b[2]].innerText == 'O') {
-                winningName.innerText = `Player O Wins The Game!`;
-                gamePage.style.display = "none";
-                winnerPage.style.display = "block";
-            } else {
-                continue;
-            }
-        }
-        console.log('winning function');
-    }
-
-    */
-
-
-    // Winning function will loop through winning combos to determine the winner 
-    // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+    /**
+     * Winning function will loop through winning combos to determine the winner 
+     *  Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+     */
 
 
     let winningFunc = () => {
@@ -164,9 +155,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('winning function');
     }
 
-
-    // Draw function to determine if the game is a draw 
-    // Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+    /**
+     * Draw function to determine if the game is a draw 
+     * Code snippet from Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (See README file)
+     */
 
 
     let drawFunc = () => {
