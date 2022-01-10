@@ -183,17 +183,47 @@ emailJS
 
 ### HTML Validation 
 
+<details><summary>Main Page</summary>
+<image src="docs/validations/html/html-validation.png">
+</details>
+
 ### CSS Validation 
+
+<details><summary>Styles</summary>
+<img src="docs/validations/css/css-validation.png">
+</details>
 
 ### JavaScript Validation 
 
+<details><summary>Script</summary>
+<img src="docs/validations/javascript/javascript-validation.png">
+</details>
+
 ### Accessibility
+
+<details><summary>Main Page</summary>
+<img src="docs/validations/performance/main-page.png">
+</details>
+
+<details><summary>Contact Page</summary>
+<img src="docs/validations/performance/contact-page.png">
+</details>
 
 ### Performance 
 
 ### Performance Test on Various Devices 
 
+In addition to the tests done on Chrome Developer tools this website was also tested on:
+
+- Samsung Galaxy S10 & S20 
+- Apple iPad 
+
 ### Browser Compatability 
+
+This website was tested on the following browsers:
+
+- Mozilla Firefox 
+- Google Chrome 
 
 ### User Story Testing 
 
@@ -257,6 +287,29 @@ emailJS
 
 # Deployment 
 
+This website was deployed using GitHub Pages following these steps:
+
+1. In the GitHub repository click on the settings tab at the top
+2. On the left menu scrtoll down and select pages
+3. For the source select 'main'
+4. The webpage will refresh and display a highlighted section with a message stating: "Your website is published at https://bcookesley.github.io/CI_pp1_country-walks/" 
+
+The repository can be forked by following these steps: 
+
+1. Go to the GitHub repository
+2. Click on fork in the top right hand corner
+
+
+To clone the repository:
+
+1. Go to the GitHub repository
+2. Click on where it says 'Code' at the top of the repository
+3. Select to clone either HTML, SSH or GitHub CLI
+4. Go to the working directory you wish to work from
+5. Go to Git Bash
+6. Type git clone and paste the URL from your clipboard ($ git clone https://github.com/USERNAME/REPOSITORY)
+7. Press enter to create your clone
+
 
 
 # Credits 
@@ -270,6 +323,7 @@ emailJS
 - Code Institute - Love Maths walkthrough project 
 - Coding Nepal - https://www.codingnepalweb.com/tic-tac-toe-game-javascript/
 - Code Now - https://www.youtube.com/watch?v=5cI0unBbAho&t=1990s (Winning and draw functions logic)
+- EmailJS - Code snippet used for form submission - https://www.emailjs.com/docs/tutorial/creating-contact-form/
 
 
 ### Design 
